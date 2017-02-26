@@ -1,0 +1,26 @@
+{
+    "name": "FuckAnigod",
+    "description": "Free pass to watch animation without ads",
+    "version": "0.1",
+    "permissions": [
+        "debugger"
+    ],
+    "content_scripts": [{
+        "matches": [
+            "https://anigod.com/animation/*"
+        ],
+        "js": [
+            "common.js"
+        ]
+    }],
+    "background": {
+        "scripts": [
+            "common.js"
+        ]
+    },
+    "browser_action": {
+        // "default_icon": "icon.png",
+        "default_title": "FuckAnigod"
+    },
+    "manifest_version": 2
+}
