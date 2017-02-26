@@ -3,17 +3,13 @@
     "description": "Free pass to watch animation without ads",
     "version": "0.1",
     "permissions": [
-        "debugger"
+        "debugger",
+        "<all_urls>", "webRequest", "webRequestBlocking"
     ],
-    "content_scripts": [{
-        "matches": [
-            "https://anigod.com/animation/*"
-        ],
-        "js": [
-            "common.js"
-        ]
-    }],
     "background": {
+        "matches": [
+            "https://anigod.com/*"
+        ],
         "scripts": [
             "common.js"
         ]
